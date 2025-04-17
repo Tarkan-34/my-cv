@@ -12,7 +12,10 @@
         <img src="profile.jpg" alt="Profile Photo" class="profile-photo">
         <h1>Tarkan</h1>
         <p>Junior Web Developer</p>
-        <p id="clock" class="clock"></p>
+        <div class="clock">
+            <div id="date"></div>
+            <div id="time"></div>
+        </div>
     </header>
 
     <section class="about">
@@ -79,13 +82,18 @@
             </div>
 
 
-            <p id="clock"></p>
 
         <script>
-            setInterval(() => {
-                const now = new Date();
-                document.getElementById("clock").textContent = now.toLocaleString(); 
-            }, 1000);
+            function updateClock() {
+                const now = new Date ();
+                const time = now.toLocaleTimeString();
+                const date = now.toLocaleDateString();
+                document.getElementById('time').textContent = time;
+                document.getElementById('date').textContent = date;
+                }
+            updateClock();
+            setInterval(updateClock, 1000);
+            
         </script>
         </body>
     </html>
