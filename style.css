@@ -78,9 +78,11 @@ body {
     }
 
     .projects1 {
-        color: #6bc4ff;
+        color: #2176ae;
         text-decoration: none;
         font-weight: bold;
+        background-color: #f4ecec;
+        padding: 10px;
     }
 
     .experience{
