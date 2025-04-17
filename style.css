@@ -1,0 +1,161 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f2f2f2;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    }
+
+    .container {
+    max-width: 800px;
+    margin: 40px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    }
+    
+    header {
+    text-align: center;
+    margin-bottom: 30px;
+    }
+    
+    header h1 {
+    margin: 0;
+    font-size: 36px;
+    color: #2c3e50;
+    }
+    
+    header p {
+    font-size: 18px;
+    color: #555;
+    }
+    
+    section {
+    margin-bottom: 30px;
+    }
+    
+    h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    }
+    
+    ul {
+    list-style: square;
+    padding-left: 20px;
+    }
+    
+    a {
+    color: #3498db;
+    text-decoration: none;
+    }
+
+    .profile-photo{
+        width: 150px;
+        height: 155px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin: 0 auto 20px;
+        display: block;
+        border: 3px solid #024470;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .projects{
+        padding: 30px 20px;
+        background-color: #f5f5f5f9;
+    }
+
+    .project{
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        padding: 20px;
+        margin-bottom: 20px;
+        background-color: #ffffff;
+    }
+
+    .projects1 {
+        color: #6bc4ff;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .experience{
+        padding: 30px 20px;
+        background-color: #f9f9f9f7;
+    }
+
+    .job{
+        margin-bottom: 20px;
+        color: #2c3e50;
+    }
+
+    .contact{
+        background-color: #eaeaeaee;
+        padding: 30px 20px;
+        text-align: center;
+    }
+    
+    .contact h2 {
+        color: #29394a;
+    }
+    
+    .contact ul {
+        list-style: none;
+        padding: 0;
+        font-size: 16px;
+    }
+
+    .contact li{
+        margin: 8px 0;
+    }
+
+    
+    .clock{
+        color: rgb(59, 59, 240);
+        position: fixed;
+        top: 10px;
+        right: 20px;
+        font-size: 18px;
+        font-weight: bold;
+        position: absolute;
+        
+    }
+
+    @media (max-width: 768px) {
+        body{
+            font-size: 14px;
+            padding: 10px;
+        }
+        .container{
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+        }
+        .profile-photo{
+            width: 120px;
+            height: 120px;
+            margin-bottom: 10px;
+        }
+        h1 {
+            font-size: 20px;
+            text-align: center;
+        }
+        .section {
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .clock{
+            font-size: 16px;
+            margin-top: 20px;
+        }
+        img{
+            max-width: 100%;
+            height: auto;
+    }
+}

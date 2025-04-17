@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tarkan - Web Developer CV</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <header>
+        <img src="profile.jpg" alt="Profile Photo" class="profile-photo">
+        <h1>Tarkan</h1>
+        <p>Junior Web Developer</p>
+        <p id="clock" class="clock"></p>
+    </header>
+
+    <section class="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm an enthusiastic beginner in web development. I enjoy building simple and responsive websites using HTML and CSS. I'm currently learning JavaScript to expand my skills further.</p>
+    </section>
+
+    <section class="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Responsive Design</li>
+            <li>Git & GitHub</li>
+        </ul>
+    </section>
+
+    <section class="projects">
+        <h2>My Projects</h2>
+        <p>I'm currently learning and improving my skills in web development.</p>
+    </section>
+
+    <div class="project">
+        <h3>Simple portfolio page (practice)</h3>
+        <p>A basic HTML and CSS portfolio layout for practicing responsive design and layout structure.</p>
+    </div>
+
+    <div class="projects1">
+        <h3>Landing Page</h3>
+        <p>This is a basic one-page website i made for practice. It has clean layout and styled button. </p>
+    </div>
+    <section class="education">
+        <h2>Education</h2>
+        <ul>
+            <li>
+                <strong>Full Stack Web Development Certificate</strong><br>
+                CodeAcademy 
+            </li>
+
+            <li>
+                <strong>High School Diploma - Architecture Direction</strong><br>
+                "GUC Zdravko Cvetkovski" , Skopje 
+            </li>
+        </ul>
+    </section>
+
+    <section class="experience">
+        <h2>Experience</h2>
+        <div class="job">
+            <h3>Operator at Mozzartbet</h3>
+            <p>Skopje, November 2023 - January 2024</p>
+            <p>I worked as an operator. I learned how to communicate clearly and work with focus.</p>
+        </div>
+    </section>
+
+    <section class="contact">
+        <h2>Contact</h2>
+        <ul>
+            <li><strong>Email: tarkanaltintas07@gmail.com</strong></li>
+            <li><strong>GitHub: <a href="https://github.com/Tarkan-34" target="_blank">github.com/Tarkan-34</a></strong></li>
+        </ul>
+
+                </section>
+            </div>
+
+
+            <p id="clock"></p>
+
+        <script>
+            setInterval(() => {
+                const now = new Date();
+                document.getElementById("clock").textContent = now.toLocaleString(); 
+            }, 1000);
+        </script>
+        </body>
+    </html>
